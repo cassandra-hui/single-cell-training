@@ -56,6 +56,9 @@ seu <- Seurat::CreateSeuratObject(sparse_matrix,
 
 seu
 
+# retesting with Caroline
+
+
 head(seu@assays$RNA@layers$counts)
 View(seu)
 head(seu@meta.data)
@@ -76,7 +79,8 @@ Seurat::VlnPlot(seu, features = c("nCount_RNA",
 
 # mitochondrial genes
 seu <- Seurat::PercentageFeatureSet(seu, 
-                                    pattern = "^MT-", 
+                                    pattern = "^mt-", 
+                                    #pattern = "^MT-", 
                                     col.name = "percent.mito")
 
 # ribosomal genes

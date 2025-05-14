@@ -84,7 +84,7 @@ names(seu@assays)
 DefaultAssay(seu) <- "RNA"
 
 # Save
-saveRDS(seu, "seu_day1-3.rds")
+saveRDS(seu, "seu_day1-3_Caroline.rds")
 
 
 # And clear environment
